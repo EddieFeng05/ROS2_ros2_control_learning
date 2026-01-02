@@ -50,3 +50,13 @@ rqt_graph
 
 Just add the ros2_control.xacro file.
 
+### Ch2-4 Add a Controller Config(Part 1 Joint State Broadcaster)
+
+ros2_controller link
+
+https://github.com/ros-controls/ros2_controllers
+
+joint state broadcaster
+
+https://github.com/ros-controls/ros2_controllers/tree/master/joint_state_broadcaster
+
