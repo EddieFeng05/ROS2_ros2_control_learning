@@ -20,3 +20,28 @@ sudo apt upgrade
 ```
 sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
+
+----
+## CH2
+
+### Ch2-2 Starting Code + Robot Overview
+
+* Using launch code to show urdf
+
+```
+ros2 launch my_robot_description display.launch.xml
+```
+
+* Show the URDF infomation
+
+
+```
+ros2 run tf2_tools view_frames 
+```
+
+
+* Show the topic infomation
+
+```
+rqt_graph
+```
