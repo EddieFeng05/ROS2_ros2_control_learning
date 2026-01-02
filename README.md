@@ -45,3 +45,8 @@ ros2 run tf2_tools view_frames
 ```
 rqt_graph
 ```
+
+### Ch2-3 Add a ros2_control tag in the URDF
+
+Just add the ros2_control.xacro file.
+
