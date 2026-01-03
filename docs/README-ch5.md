@@ -33,3 +33,11 @@ New file arm.xacro and add new code in common_properities.xacro and my_robot.urd
 ```
 ros2 launch my_robot_description display.launch.xml 
 ```
+
+### 5-3 Step 1: ros2_control tag in URDF
+
+1. Change into mock in mobile_base.ros2_control.xacro
+
+2. New file arm.ros2_control.xacro
+
+3. Include arm.ros2_control.xacro in my_robot.urdf.xacro.
