@@ -3,15 +3,15 @@
 namespace mobile_base_hardware{
 
 hardware_interface::CallbackReturn MobileBaseHardwareInterface::on_init
-    (const hardware_interface::HardwareInfo & info)
+    (const hardware_interface::HardwareComponentInterfaceParams & params)
 {
-    if(hardware_interface::SystemInterface::on_init(info) !=
+    if(hardware_interface::SystemInterface::on_init(params) !=
         hardware_interface::CallbackReturn::SUCCESS)
     {
         return hardware_interface::CallbackReturn::ERROR;
     }
 
-    info_ =  info;
+    info_ = params.hardware_info;
 
     left_motor_id_ = 10;
     right_motor_id_ = 20;

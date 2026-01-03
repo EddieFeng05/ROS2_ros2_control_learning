@@ -57,3 +57,9 @@ Add the plugin code in cpp file end. And new the plugin xml file in my_robot_har
 ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
 
 ros2_ws/src/my_robot_hardware/my_robot_hardware_interface.xml
+
+### Ch4-6 Build the Hardware Interface
+
+Add new code in package.xml and CMakeLists.txt.
+
+* Notice: We need to change the on_init function. 
