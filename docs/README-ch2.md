@@ -22,7 +22,7 @@ sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
 
 ----
-## CH2
+## CH2 Adapt a Robot to ros2_control(with Mock Hardware)
 
 ### Ch2-2 Starting Code + Robot Overview
 
