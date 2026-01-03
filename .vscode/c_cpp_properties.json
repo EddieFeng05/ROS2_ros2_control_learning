@@ -8,7 +8,8 @@
       "includePath": [
         "/opt/ros/jazzy/include/**",
         "/usr/include/**",
-        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/dxl_test/include/**"
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/dxl_test/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/my_robot_hardware/include/**"
       ],
       "name": "ros2",
       "intelliSenseMode": "gcc-x64",

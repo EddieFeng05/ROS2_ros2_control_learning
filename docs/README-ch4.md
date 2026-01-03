@@ -33,3 +33,10 @@ ros2 pkg create my_robot_hardware --build-type ament_cmake --dependencies rclcpp
 ```
 
 Add CMakeLists.txt and package.xml
+
+
+### Ch4-3 Write the Hardware Interface (header file)
+
+Write header file about Hardware Interface. It's about Node lifecycles, you can copy it to if you create the new hardware interface. 
+
+ros2_ws/src/my_robot_hardware/include/my_robot_hardware/mobile_base_hardware_interface.hpp
