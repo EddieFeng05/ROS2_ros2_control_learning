@@ -63,3 +63,9 @@ ros2_ws/src/my_robot_hardware/my_robot_hardware_interface.xml
 Add new code in package.xml and CMakeLists.txt.
 
 * Notice: We need to change the on_init function. 
+
+### Ch4-7 Start the ros2_control Stack with your new Hardware Interface
+
+Change plugin (mock to mobile_base_hardware/MobileBaseHardwareInterface) in ros2_control.xacro.
+
+* Notice: ros2_control name="MobileBase cannot the same as <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin> name

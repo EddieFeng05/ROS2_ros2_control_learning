@@ -50,3 +50,5 @@ ament_export_dependencies(
   rclcpp
   rclcpp_lifecycle
 )
+
+ament_package()
