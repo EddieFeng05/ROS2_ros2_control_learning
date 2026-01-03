@@ -49,7 +49,18 @@ Create the new package about dxl
 ros2 pkg create dxl_test --build-type ament_cmake --dependencies rclcpp dynamixel_sdk
 ```
 
-Add the  dxl_test code and test it 
+Add the  dxl_test code and test it (no function)
+
+```
+ros2 run dxl_test test_motors 
+
+```
+
+
+### Ch3-5 Test the driver
+
+Write the test_motors.cpp
+
 
 ```
 ros2 run dxl_test test_motors 
