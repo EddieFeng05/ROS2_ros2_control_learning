@@ -48,3 +48,12 @@ ros2_ws/src/my_robot_hardware/include/my_robot_hardware/mobile_base_hardware_int
 Write cpp file for Hardware Interface. It's about Node lifecycles, you can copy it to if you create the new hardware interface. 
 
 ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
+
+### Ch4-5 Make the Hardware Interface a Plugin
+
+Add the plugin code in cpp file end. And new the plugin xml file in my_robot_hardware folder.
+
+
+ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
+
+ros2_ws/src/my_robot_hardware/my_robot_hardware_interface.xml
