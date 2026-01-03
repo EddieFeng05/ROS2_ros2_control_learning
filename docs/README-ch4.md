@@ -37,6 +37,14 @@ Add CMakeLists.txt and package.xml
 
 ### Ch4-3 Write the Hardware Interface (header file)
 
-Write header file about Hardware Interface. It's about Node lifecycles, you can copy it to if you create the new hardware interface. 
+Write header file for Hardware Interface. It's about Node lifecycles, you can copy it to if you create the new hardware interface. 
 
 ros2_ws/src/my_robot_hardware/include/my_robot_hardware/mobile_base_hardware_interface.hpp
+
+
+
+### Ch4-4 Write the Hardware Interface (cpp file)
+
+Write cpp file for Hardware Interface. It's about Node lifecycles, you can copy it to if you create the new hardware interface. 
+
+ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
