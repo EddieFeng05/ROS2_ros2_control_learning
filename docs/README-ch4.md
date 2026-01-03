@@ -69,3 +69,9 @@ Add new code in package.xml and CMakeLists.txt.
 Change plugin (mock to mobile_base_hardware/MobileBaseHardwareInterface) in ros2_control.xacro.
 
 * Notice: ros2_control name="MobileBase cannot the same as <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin> name
+
+## Ch4-8 Debugging Steps
+
+Add debuggin code in hardware_interface.cpp.
+
+ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
