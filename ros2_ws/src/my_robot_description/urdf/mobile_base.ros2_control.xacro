@@ -6,6 +6,10 @@
             <!-- <plugin>mock_components/GenericSystem</plugin>
             <param name="calculate_dynamics">true</param> -->
             <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin>
+            <!-- use hardware parameters to hardware interface -->
+            <param name="left_motor_id" value="10"/>
+            <param name="right_motor_id" value="20"/>
+            <param name="dynamixel_port" value="/dev/ttyUSB0"/>            
         </hardware>
         <joint name="base_right_wheel_joint">
             <command_interface name="velocity" />

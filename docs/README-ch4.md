@@ -75,3 +75,8 @@ Change plugin (mock to mobile_base_hardware/MobileBaseHardwareInterface) in ros2
 Add debuggin code in hardware_interface.cpp.
 
 ros2_ws/src/my_robot_hardware/src/mobile_base_hardware_interface.cpp
+
+
+## Ch4-9 Add Parameters to the Hardware Interface
+
+Change to parameters to setup hardware interface by ros2_controller.xacro

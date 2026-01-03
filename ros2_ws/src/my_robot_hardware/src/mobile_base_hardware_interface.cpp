@@ -13,10 +13,14 @@ hardware_interface::CallbackReturn MobileBaseHardwareInterface::on_init
 
     info_ = params.hardware_info;
 
-    left_motor_id_ = 10;
-    right_motor_id_ = 20;
+    // left_motor_id_ = 10;
+    // right_motor_id_ = 20;
+    // port_ = "/dev/ttyUSB0";
 
-    port_ = "/dev/ttyUSB0";
+    // Use hardware parameters from ros2_control.xacro
+    left_motor_id_ = std::stoi(info_.hardware_parameters["left_motor_id"]);
+    right_motor_id_ = std::stoi(info_.hardware_parameters["right_motor_id"]);
+    port_ = info_.hardware_parameters["dynamixel_port"];
 
     driver_ = std::make_shared<XL330Driver>(port_);
     
