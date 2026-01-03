@@ -22,21 +22,14 @@ sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
 
 ----
-## CH2 Adapt a Robot to ros2_control(with Mock Hardware)
-
-[CH2 REAMDME](./docs/README-ch2.md)
-
-
-## CH3 Create an C++ Hardware Driver
-
-[CH3 REAMDME](./docs/README-ch3.md)
-
-
-## CH4 Write a Hardware Interface for ros2_control
-
-[CH4 REAMDME](./docs/README-ch4.md)
-
-
 ## CH5 Project: Set up ros2_control for a Robotic Arm
 
-[CH5 REAMDME](./docs/README-ch5.md)
+### Ch5-1 Intro - Project Overview
+
+### 5-2 Step 0: Code Setup
+
+New file arm.xacro and add new code in common_properities.xacro and my_robot.urdf.xacro.
+
+```
+ros2 launch my_robot_description display.launch.xml 
+```
