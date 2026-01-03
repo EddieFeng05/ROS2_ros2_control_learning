@@ -22,16 +22,14 @@ sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
 
 ----
-## CH2 Adapt a Robot to ros2_control(with Mock Hardware)
-
-[CH2 REAMDME](./docs/README-ch2.md)
-
-
-## CH3 Create an C++ Hardware Driver
-
-[CH3 REAMDME](./docs/README-ch3.md)
-
-
 ## CH4 Write a Hardware Interface for ros2_control
 
-[CH4 REAMDME](./docs/README-ch4.md)
+### Ch4-2 Create a Hardware Package and Set Up Your Driver
+
+Create new package 
+
+```
+ros2 pkg create my_robot_hardware --build-type ament_cmake --dependencies rclcpp
+```
+
+Add CMakeLists.txt and package.xml
