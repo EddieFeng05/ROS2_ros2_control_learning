@@ -41,3 +41,14 @@ ros2 launch my_robot_description display.launch.xml
 2. New file arm.ros2_control.xacro
 
 3. Include arm.ros2_control.xacro in my_robot.urdf.xacro.
+
+
+### 5-4 Step 2: Configure a Controller
+
+[ros2_controllers github link](https://github.com/ros-controls/ros2_controllers)
+
+[forward_command_controller github link](https://github.com/ros-controls/ros2_controllers/tree/master/forward_command_controller)
+
+1. Add new code in my_robot_controllers.yaml
+
+ros2_ws/src/my_robot_bringup/config/my_robot_controllers.yaml
