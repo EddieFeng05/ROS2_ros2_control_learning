@@ -36,5 +36,5 @@ diff_drive_controller: # Name follow you named the diff drive controller above
 
 arm_joints_controller:
   ros__parameters:
-    joint_names: ["arm_joint1", "arm_joint2"] # Names of the arm joints in URDF
+    joints: ["arm_joint1", "arm_joint2"] # Names of the arm joints in URDF
     interface_name: position # Control interface type (position, velocity, effort)

@@ -52,3 +52,33 @@ ros2 launch my_robot_description display.launch.xml
 1. Add new code in my_robot_controllers.yaml
 
 ros2_ws/src/my_robot_bringup/config/my_robot_controllers.yaml
+
+
+### 5-5 Step 3: Test the Controller with the Mock Component
+
+1. Add new code in my_robot.launch.xml
+
+ros2_ws/src/my_robot_bringup/launch/my_robot.launch.xml
+
+```
+ros2 launch my_robot_bringup my_robot.launch.xml 
+```
+
+To understand the node list
+
+```
+rqt_graph
+```
+To understand info 
+```
+ros2 topic info /arm_joints_controller/commands 
+```
+
+Send command to control arm
+
+```
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.0, 0.0]}"
+
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.4, 0.3]}"
+
+```
