@@ -61,7 +61,7 @@ controller_interface::CallbackReturn MyController::on_activate(const rclcpp_life
 {
     (void)previous_state;
     appCommand_.clear();
-    for (size_t i = 0; i < (int)joint_names_.size(); i++)
+    for (size_t i = 0; i < joint_names_.size(); i++)
     {
         appCommand_.push_back(state_interfaces_[i].get_optional().value());
     }
@@ -73,14 +73,21 @@ controller_interface::return_type MyController::update(const rclcpp::Time &time,
 {
     (void)time;
     (void)period;
-    for (size_t i = 0; i < (int)joint_names_.size(); i++)
+    for (size_t i = 0; i < joint_names_.size(); i++)
     {
         double state = state_interfaces_[i].get_optional().value();
         double cmd = appCommand_[i];
         double new_cmd = cmd * coefficient_ + state * (1.0 - coefficient_);
-        command_interfaces_[i].set_value(new_cmd);
+        if (!command_interfaces_[i].set_value(new_cmd))
+        {
+            return controller_interface::return_type::ERROR;
+        }
     }
     return controller_interface::return_type::OK;
 }
     
 } // namespace my_controller 
+
+#include "pluginlib/class_list_macros.hpp"
+
+PLUGINLIB_EXPORT_CLASS(my_controller::MyController, controller_interface::ControllerInterface)

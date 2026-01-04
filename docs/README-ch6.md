@@ -57,3 +57,16 @@ ros2_ws/src/my_robot_controllers/src/my_controller.cpp
       ],
 ```
 
+### 6-4 Build as a Plugin
+
+1. Add plugin code in my_controller.cpp
+
+ros2_ws/src/my_robot_controllers/src/my_controller.cpp
+
+2. New file my_controller_plugin.xml
+
+ros2_ws/src/my_robot_controllers/my_controller_plugin.xml
+
+3. Add new depend in packages 
+
+4. Add new depend and includes in CMakeList.txt
