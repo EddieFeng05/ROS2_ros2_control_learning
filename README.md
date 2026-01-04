@@ -52,3 +52,8 @@ sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ## CH5 Project: Set up ros2_control for a Robotic Arm
 
 [CH5 REAMDME](./docs/README-ch5.md)
+
+## CH6 Create a Custom Controller
+
+[CH6 REAMDME](./docs/README-ch6.md)
+
