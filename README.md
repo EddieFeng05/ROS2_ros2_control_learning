@@ -22,6 +22,18 @@ sudo apt install ros-jazzy-ros2-control ros-jazzy-ros2-controllers
 ```
 
 ----
+
+* In .vscode you need to add
+
+```
+      "includePath": [
+        "/opt/ros/jazzy/include/**",
+        "/usr/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/dxl_test/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/my_robot_hardware/include/**"
+      ],
+      "name": "ro
+```
 ## CH2 Adapt a Robot to ros2_control(with Mock Hardware)
 
 [CH2 REAMDME](./docs/README-ch2.md)
