@@ -82,3 +82,14 @@ ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray
 ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.4, 0.3]}"
 
 ```
+
+
+### 5-6 Step 4: Write a Hardware Interface
+
+1. New arm_hardware_interface.hpp
+
+ros2_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.hpp
+
+2. arm_hardware_interface.cpp
+
+ros2_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp
