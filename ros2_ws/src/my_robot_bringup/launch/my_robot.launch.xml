@@ -18,7 +18,9 @@
 
     <node pkg="controller_manager" exec="spawner" args="diff_drive_controller" />
 
-    <node pkg="controller_manager" exec="spawner" args="arm_joints_controller" />
+    <!-- <node pkg="controller_manager" exec="spawner" args="arm_joints_controller" /> -->
+    
+    <node pkg="controller_manager" exec="spawner" args="my_arm_controller" />
 
     <node pkg="rviz2" exec="rviz2" output="screen"
         args="-d $(var rviz_config_path)" />
