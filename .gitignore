@@ -11,7 +11,11 @@ __pycache__/
 .Python
 
 # IDEs
-.vscode/
+# Ignore all .vscode/ files except specific config files
+.vscode/*
+!.vscode/c_cpp_properties.json
+!.vscode/settings.json
+
 .idea/
 *.swp
 *.swo
