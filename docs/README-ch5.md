@@ -133,3 +133,58 @@ ros2 control list_hardware_interfaces
 ros2 control list_hardware_components 
 
 ```
+
+### 5-9 Extra: Gazebo and ros2_control
+
+1. Install Gazebo
+
+```
+sudo apt install ros-jazzy-ros-gz
+
+sudo apt install ros-jazzy-gz-ros2-control*
+
+```
+
+2. Add mass and initia in URDF. 
+
+3. Run the rviz2 to see setting is workable.
+
+```
+ros2 launch my_robot_description display.launch.xml 
+
+```
+
+4. New a file my_robot_gazebo_ros2_cotrol.xacro
+
+ros2_ws/src/my_robot_description/urdf/my_robot_gazebo_ros2_cotrol.xacro
+
+5. New a file my_robot_gazebo.launch.xml
+
+ros2_ws/src/my_robot_bringup/launch/my_robot_gazebo.launch.xml
+
+6. New a file gazebo_bridge.yaml
+
+ros2_ws/src/my_robot_bringup/config/gazebo_bridge.yaml
+
+7. Launch the code
+
+```
+ros2 launch my_robot_bringup my_robot_gazebo.launch.xml 
+
+```
+
+* Use keyboarda control mobile
+
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_drive_controller/cmd_vel -p stamped:=true
+
+```
+
+* Send command for arm
+
+```
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.0, 0.0]}"
+
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.4, 0.3]}"
+
+```

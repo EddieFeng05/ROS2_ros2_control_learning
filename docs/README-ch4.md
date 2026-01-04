@@ -70,6 +70,13 @@ Change plugin (mock to mobile_base_hardware/MobileBaseHardwareInterface) in ros2
 
 * Notice: ros2_control name="MobileBase cannot the same as <plugin>mobile_base_hardware/MobileBaseHardwareInterface</plugin> name
 
+
+* Use keyboarda control robot
+
+```
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_drive_controller/cmd_vel -p stamped:=true
+
+```
 ## Ch4-8 Debugging Steps
 
 Add debuggin code in hardware_interface.cpp.
