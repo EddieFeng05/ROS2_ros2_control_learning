@@ -105,3 +105,31 @@ ros2_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp
 ros2_ws/src/my_robot_hardware/my_robot_hardware_interface.xml
 
 3. Add new thing in CMakeLists.txt
+
+### 5-8 Step 6: Test the Hardware Interface and Debug
+
+1. Change mock into real in arm.ros2_control.xacro 
+
+```
+ros2 launch my_robot_bringup my_robot.launch.xml 
+```
+
+2. Send command
+
+```
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.0, 0.0]}"
+
+ros2 topic pub -1 /arm_joints_controller/commands std_msgs/msg/Float64MultiArray "{data: [0.4, 0.3]}"
+
+```
+
+3. Debugging
+
+```
+ros2 control list_controllers
+
+ros2 control list_hardware_interfaces 
+
+ros2 control list_hardware_components 
+
+```
