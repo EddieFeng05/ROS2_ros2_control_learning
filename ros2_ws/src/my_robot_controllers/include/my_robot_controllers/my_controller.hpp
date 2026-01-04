@@ -7,7 +7,7 @@
 using FloatArray = example_interfaces::msg::Float64MultiArray;
 namespace my_controller { 
 
-class my_controller: public controller_interface::ControllerInterface
+class MyController: public controller_interface::ControllerInterface
 {
 
 public:

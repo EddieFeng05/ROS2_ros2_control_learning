@@ -38,3 +38,22 @@ ros2 pkg create my_robot_controllers --build-type ament_cmake --dependencies rcl
 2. New file my_controller.hpp
 
 ros2_ws/src/my_robot_controllers/include/my_robot_controllers/my_controller.hpp
+
+### 6-3 Write the controller cpp file
+
+1. New file my_controller.cpp
+
+ros2_ws/src/my_robot_controllers/src/my_controller.cpp
+
+2. Setting .vscode
+
+```
+      "includePath": [
+        "/opt/ros/jazzy/include/**",
+        "/usr/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/dxl_test/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/my_robot_hardware/include/**",
+        "/home/eddie/Documents/ROS2_ros2_control_learning/ros2_ws/src/my_robot_controllers/include/**"
+      ],
+```
+
