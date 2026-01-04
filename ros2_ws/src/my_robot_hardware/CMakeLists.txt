@@ -19,6 +19,7 @@ add_library(
   ${PROJECT_NAME}
   SHARED
   src/mobile_base_hardware_interface.cpp
+  src/arm_hardware_interface.cpp
 )
 
 ament_target_dependencies(${PROJECT_NAME}

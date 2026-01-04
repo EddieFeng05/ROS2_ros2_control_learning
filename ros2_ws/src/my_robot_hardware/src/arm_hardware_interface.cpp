@@ -80,3 +80,7 @@ hardware_interface::return_type ArmHardwareInterface::write
     return hardware_interface::return_type::OK;
 }
 } // namespace arm_hardware
+
+#include "pluginlib/class_list_macros.hpp"
+
+PLUGINLIB_EXPORT_CLASS(arm_hardware::ArmHardwareInterface, hardware_interface::SystemInterface)

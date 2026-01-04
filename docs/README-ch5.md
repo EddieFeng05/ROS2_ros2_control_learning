@@ -93,3 +93,15 @@ ros2_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.h
 2. arm_hardware_interface.cpp
 
 ros2_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp
+
+### 5-7 Step 5: Create a Plugin out of the Hardware Interface
+
+1. Add plugin code in arm_hardware_interface.cpp
+
+ros2_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp
+
+2. Addc description in my_robot_hardware_interface.xml
+
+ros2_ws/src/my_robot_hardware/my_robot_hardware_interface.xml
+
+3. Add new thing in CMakeLists.txt
